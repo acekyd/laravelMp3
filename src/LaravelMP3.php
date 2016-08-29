@@ -12,13 +12,24 @@ class LaravelMP3
 		return $getID3;
 	}
 
-
-
     public function hello()
     {
     	$lib = $this->load();
     	return $lib;
         return 'Hello Ace!';
+    }
+
+    public function getBitrate($path)
+    {
+    	$lib = $this->load();
+    	$info = $lib->analyze( $path );
+
+	    if(!isset($info['audio']))
+	    {
+	        return $info;
+	    }
+
+	    return $info['audio']['bitrate'];
     }
 }
 
