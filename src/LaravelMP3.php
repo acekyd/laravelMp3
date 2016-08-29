@@ -16,7 +16,7 @@ class LaravelMP3
     public function test($path)
     {
     	$lib = $this->load($path);
-    	return $lib;
+    	return $lib['tags'];
     }
 
     public function getBitrate($path)
