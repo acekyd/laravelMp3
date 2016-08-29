@@ -1,0 +1,20 @@
+{
+    "name": "acekyd/laravelmp3",
+    "description": "A light weight Laravel package for simple operations with mp3 files",
+    "keywords": ["laravel", "mp3", "audio", "media"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abati AceKYD Adewale",
+            "email": "acekyd01@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acekyd\\LaravelMP3\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
