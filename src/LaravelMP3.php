@@ -13,9 +13,9 @@ class LaravelMP3
 	    return $info;
 	}
 
-    public function hello()
+    public function test($path)
     {
-    	$lib = $this->load();
+    	$lib = $this->load($path);
     	return $lib;
     }
 
