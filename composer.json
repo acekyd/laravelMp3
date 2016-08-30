@@ -1,5 +1,6 @@
 {
     "name": "acekyd/laravelmp3",
+    "type": "library",
     "description": "A light weight Laravel package for simple operations with mp3 files",
     "keywords": ["laravel", "mp3", "audio", "media"],
     "homepage": "https://github.com/acekyd/laravelmp3",
@@ -12,7 +13,6 @@
             "homepage": "http://acekyd.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Acekyd\\LaravelMP3\\": "src/"
