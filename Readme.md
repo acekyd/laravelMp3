@@ -15,7 +15,7 @@ $ composer require acekyd/laravelmp3
 Another alternative is to simply add the following line to the require block of your `composer.json` file.
 
 ```
-"acekyd/laravelmp3": "1.1.*"
+"acekyd/laravelmp3": "1.*"
 ```
 
 Then run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -24,11 +24,24 @@ Add this to your providers array in `config/app.php`
 
 ```php
 
-// Laravel 5: config/app.php
+// Laravel 5.2: config/app.php
 
 'providers' => [
     ...
-    'Acekyd\LaravelMP3\LaravelMP3ServiceProvider',
+    Acekyd\LaravelMP3\LaravelMP3ServiceProvider::class,
     ...
 ];
+```
+
+This package also comes with a facade
+
+```php
+
+// Laravel 5: config/app.php
+
+'aliases' => [
+    ...
+    'LaravelMP3' => Acekyd\LaravelMP3\LaravelMP3Facade::class,
+    ...
+]
 ```

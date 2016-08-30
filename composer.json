@@ -2,11 +2,14 @@
     "name": "acekyd/laravelmp3",
     "description": "A light weight Laravel package for simple operations with mp3 files",
     "keywords": ["laravel", "mp3", "audio", "media"],
+    "homepage": "https://github.com/acekyd/laravelmp3",
     "license": "GPL",
     "authors": [
         {
             "name": "Abati AceKYD Adewale",
-            "email": "acekyd01@gmail.com"
+            "email": "acekyd01@gmail.com",
+            "role": "Developer",
+            "homepage": "http://acekyd.com"
         }
     ],
     "autoload": {
