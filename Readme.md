@@ -58,10 +58,16 @@ Use it in your controllers to get the data you might need.
 ```
 
 ## Functions
+* getAlbum($path)		//This returns the Album name
+* getArtist($path)		//This returns the Artist name
 * getBitrate($path) 	//This returns the bitrate
 * getDuration($path)	//This returns the playtime duration of the mp3 e.g 00:03:45
 * getFormat($path)		//This returns the file format e.g mp3
+* getGenre($path)		//This returns the audio genre
 * isLossless($path)		//This returns true or false if the audio file is lossless
+* getTitle($path)		//This returns the Title/Name of audio file
+* getTrackNo($path)		//This returns the Album track no of an audio file
+* getYear($path)		//This returns the Album year of an audio file
 
 ## Contributing
 

@@ -16,7 +16,19 @@ class LaravelMP3
     public function test($path)
     {
     	$lib = $this->load($path);
-    	return $lib;
+    	return $lib['tags'];
+    }
+
+    public function getAlbum($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['album'];
+    }
+
+    public function getArtist($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['artist'];
     }
 
     public function getBitrate($path)
@@ -52,11 +64,37 @@ class LaravelMP3
 	    return $lib['audio']['dataformat'];
     }
 
+    public function getGenre($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['genre'];
+    }
+
     public function isLossless($path)
     {
     	$lib = $this->load($path);
 	    return $lib['audio']['lossless'];
     }
+
+    public function getTitle($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['title'];
+    }
+
+    public function getTrackNo($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['track_number'];
+    }
+
+    public function getYear($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['tag']['id3v2']['year'];
+    }
+
+
 }
 
 
