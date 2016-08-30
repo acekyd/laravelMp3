@@ -45,3 +45,26 @@ This package also comes with a facade
     ...
 ]
 ```
+
+## Usage
+
+Laravel MP3 requires you to pass only one argument which is the filepath. Can be done during or after upload.
+Use it in your controllers to get the data you might need.
+
+``` php
+	$file = $request->file('music');
+	$details = LaravelMP3::getBitrate($file); //This returns the bitrate of the music file
+
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Credits
+
+- [Abati 'AceKYD' Adewale](https://twitter.com/ace_kyd)
+
+## License
+
+The GPL License.
