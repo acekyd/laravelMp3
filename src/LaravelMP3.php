@@ -13,11 +13,12 @@ class LaravelMP3
 	    return $info;
 	}
 
-    public function test($path)
+ /*   public function test($path)
     {
     	$lib = $this->load($path);
-    	return $lib['tags'];
+    	return $lib['mime_type'];
     }
+*/
 
     public function getAlbum($path)
     {
@@ -70,10 +71,10 @@ class LaravelMP3
 	    return $lib['tag']['id3v2']['genre'];
     }
 
-    public function isLossless($path)
+    public function getMime($path)
     {
     	$lib = $this->load($path);
-	    return $lib['audio']['lossless'];
+	    return $lib['mime_type'];
     }
 
     public function getTitle($path)
@@ -92,6 +93,12 @@ class LaravelMP3
     {
     	$lib = $this->load($path);
 	    return $lib['tag']['id3v2']['year'];
+    }
+
+	public function isLossless($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['audio']['lossless'];
     }
 
 

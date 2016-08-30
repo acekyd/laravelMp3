@@ -64,10 +64,11 @@ Use it in your controllers to get the data you might need.
 * getDuration($path)	//This returns the playtime duration of the mp3 e.g 00:03:45
 * getFormat($path)		//This returns the file format e.g mp3
 * getGenre($path)		//This returns the audio genre
-* isLossless($path)		//This returns true or false if the audio file is lossless
+* getMime($path)		//This returns the mime type e.d "audio/mpeg"
 * getTitle($path)		//This returns the Title/Name of audio file
 * getTrackNo($path)		//This returns the Album track no of an audio file
 * getYear($path)		//This returns the Album year of an audio file
+* isLossless($path)		//This returns true or false if the audio file is lossless
 
 ## Contributing
 
