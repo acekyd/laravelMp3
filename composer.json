@@ -1,10 +1,9 @@
 {
     "name": "acekyd/laravelmp3",
-    "type": "library",
     "description": "A light weight Laravel package for simple operations with mp3 files",
     "keywords": ["laravel", "mp3", "audio", "media"],
     "homepage": "https://github.com/acekyd/laravelmp3",
-    "license": "GPL",
+    "license": "GPL-2.0",
     "authors": [
         {
             "name": "Abati AceKYD Adewale",
@@ -13,12 +12,21 @@
             "homepage": "http://acekyd.com"
         }
     ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "illuminate/support": "~5"
+    },
     "autoload": {
         "psr-4": {
             "Acekyd\\LaravelMP3\\": "src/"
         }
     },
     "require": {
-        "php": "^5.3.3 || ^7.0",
+        "php": "^5.3.3 || ^7.0"
+    },
+     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }
