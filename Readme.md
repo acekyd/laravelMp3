@@ -70,10 +70,6 @@ Use it in your controllers to get the data you might need.
 * getYear($path)		//This returns the Album year of an audio file
 * isLossless($path)		//This returns true or false if the audio file is lossless
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
 ## Credits
 
 - [Abati 'AceKYD' Adewale](https://twitter.com/ace_kyd)
