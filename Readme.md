@@ -57,6 +57,12 @@ Use it in your controllers to get the data you might need.
 
 ```
 
+## Functions
+* getBitrate($path) 	//This returns the bitrate
+* getDuration($path)	//This returns the playtime duration of the mp3 e.g 00:03:45
+* getFormat($path)		//This returns the file format e.g mp3
+* isLossless($path)		//This returns true or false if the audio file is lossless
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.

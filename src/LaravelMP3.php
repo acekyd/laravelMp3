@@ -25,12 +25,6 @@ class LaravelMP3
 	    return $lib['audio']['bitrate'];
     }
 
-    public function getFormat($path)
-    {
-    	$lib = $this->load($path);
-	    return $lib['audio']['dataformat'];
-    }
-
     public function getDuration($path)
     {
     	$lib = $this->load($path);
@@ -50,6 +44,18 @@ class LaravelMP3
 	    else $play_time = sprintf("%02d:%02d" , $mins , $secs);
 
 	    return $play_time;
+    }
+
+    public function getFormat($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['audio']['dataformat'];
+    }
+
+    public function isLossless($path)
+    {
+    	$lib = $this->load($path);
+	    return $lib['audio']['lossless'];
     }
 }
 
