@@ -12,6 +12,7 @@
             "homepage": "http://acekyd.com"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Acekyd\\LaravelMP3\\": "src/"
