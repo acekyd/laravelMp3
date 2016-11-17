@@ -10,7 +10,8 @@ class LaravelMP3
     public function load($path = null)
     {
         if ($this->info === null) {
-            include('getid3/getid3.php');
+            //using include causes redeclaration exception, while using this class to process more than one file (eg. in a loop on all mp3s)
+            include_once('getid3/getid3.php');
             $getID3 = new \getID3;
             $this->info = $getID3->analyze( $path );
 
