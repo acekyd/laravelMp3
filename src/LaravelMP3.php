@@ -43,6 +43,12 @@ class LaravelMP3
         $lib = $this->load($path);
         return $lib['audio']['bitrate'];
     }
+    
+    public function getDurationSeconds($path)
+    {
+        $lib = $this->load($path);
+        return $lib['playtime_seconds'];
+    }
 
     public function getDuration($path)
     {
