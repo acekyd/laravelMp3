@@ -1,7 +1,7 @@
 {
     "name": "acekyd/laravelmp3",
-    "description": "A light weight Laravel package for simple operations with mp3 files",
-    "keywords": ["laravel", "mp3", "audio", "media"],
+    "description": "A light weight Laravel package to handle simple operations with mp3 files",
+    "keywords": ["laravel", "mp3", "audio", "media"m "ID3"],
     "homepage": "https://github.com/acekyd/laravelmp3",
     "license": "GPL-2.0",
     "authors": [
@@ -27,6 +27,14 @@
      "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Acekyd\\LaravelMP3\\LaravelMP3ServiceProvider"
+            ],
+            "aliases": [
+                "LaravelMp3": "Acekyd\\LaravelMP3\\LaravelMP3Facade"
+            ]
         }
     }
 }
