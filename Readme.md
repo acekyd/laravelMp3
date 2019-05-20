@@ -20,6 +20,12 @@ Another alternative is to simply add the following line to the require block of 
 
 Then run `composer install` or `composer update` to download it and have the autoloader updated.
 
+
+### Laravel 5.5+:
+Just install the package via composer and laravel auto-discovers the pagkage. You're good to go!
+
+If you're running a lower version of laravel or you don't use auto-discovery,
+
 Add this to your providers array in `config/app.php`
 
 ```php
